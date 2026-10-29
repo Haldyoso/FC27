@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FC27 Coach</title>
+  <meta name="description" content="Osobný návod na EA SPORTS FC 27 pre PC s Xbox ovládačom: tier list striel, triky, obrana, taktika, lacné hidden gems a analýza môjho tímu.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#prehlad">FC27 <span>Coach</span></a>
+    <nav class="nav" aria-label="Sekcie">
+      <a href="#prehlad">Prehľad</a>
+      <a href="#roadmapa">Roadmapa</a>
+      <a href="#strely">Strely</a>
+      <a href="#triky">Triky</a>
+      <a href="#obrana">Obrana</a>
+      <a href="#taktika">Taktika</a>
+      <a href="#gems">Hidden gems</a>
+      <a href="#tim">Môj tím</a>
+      <a href="#nastavenia">Nastavenia</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PREHĽAD ============ -->
+<section id="prehlad" class="hero">
+  <div class="wrap">
+    <span class="eyebrow">EA SPORTS FC 27 · Ultimate Team · Division Rivals</span>
+    <h1>Z Divízie 10 <em>vyššie.</em><br>Krok po kroku.</h1>
+    <p>Môj osobný návod: ktoré strely fungujú a ako ich spraviť, triky s loptou, ako brániť, akú taktiku hrať, lacné skryté perly a analýza môjho aktuálneho tímu. Všetky tlačidlá sú pre <strong>Xbox ovládač na PC</strong>.</p>
+
+    <div class="chips">
+      <span class="chip">Platforma: <b>PC + Xbox ovládač</b></span>
+      <span class="chip">Aktuálne: <b id="chip-div">Div 10</b></span>
+      <span class="chip">Cieľ: <b id="chip-goal">Div 7</b></span>
+      <span class="chip">Aktualizované: <b>29. 10. 2026</b></span>
+    </div>
+
+    <div class="card" style="margin-bottom: 28px;">
+      <h3>Moja cesta divíziami</h3>
+      <div class="divs" id="div-track" aria-label="Postup divíziami"></div>
+      <p class="goalline" style="margin: 8px 0 0;">Plná farba = kde som teraz, prerušovaný rámik = môj cieľ. Div 10 je najnižšia, nad Div 1 je Elite.</p>
+    </div>
+
+    <h3>Top 5 vecí, ktoré mi prinesú najviac výhier</h3>
+    <ol class="quick">
+      <li><div><strong>Bráň manuálne: podrž <kbd class="x sh">LT</kbd> a ťukni <kbd class="x b">B</kbd> raz, v správnej chvíli.</strong>V FC 27 (Competitive) už AI obrancovia nezoberú loptu sami. Kto nebráni sám, inkasuje.</div></li>
+      <li><div><strong>Prestaň stále držať šprint <kbd class="x sh">RT</kbd>.</strong>Šprint len do voľného priestoru. Pri šprinte sa horšie otáča, horšie prihráva aj strieľa.</div></li>
+      <li><div><strong>V šestnástke strieľaj Low Driven: <kbd class="x b">B</kbd><span class="then">→</span><kbd class="x b">B</kbd> (dvojklik), na bližšiu žrď.</strong>Sila 2–3 dieliky. Najspoľahlivejšie zakončenie tohto ročníka.</div></li>
+      <li><div><strong>Pred strelou falošná strela: <kbd class="x b">B</kbd><span class="then">→</span><kbd class="x a">A</kbd>.</strong>Najjednoduchší trik v hre, funguje s každým hráčom a obranca sa naň skoro vždy hodí.</div></li>
+      <li><div><strong>Hraj trpezlivo: 3–5 krátkych prihrávok <kbd class="x a">A</kbd> pred útokom.</strong>Prihrávky do behu <kbd class="x y">Y</kbd> sú v FC 27 plne manuálne – letia presne tam, kam mieriš. Ak nie je voľný nábeh, nehraj ich.</div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ ROADMAPA ============ -->
+<section id="roadmapa">
+  <div class="wrap">
+    <span class="eyebrow">Čo zlepšovať a v akom poradí</span>
+    <h2>Roadmapa</h2>
+    <p class="lead">Najprv obrana, potom držanie lopty, až potom strely a triky. V nízkych divíziách sa zápasy prehrávajú hlavne zbytočne inkasovanými gólmi, nie málo strelenými. Odškrtávaj si body – prehliadač si ich zapamätá.</p>
+
+    <div class="phases" id="phases">
+      <article class="card phase" data-phase="0">
+        <header><span class="when">Deň 1</span><h3>Fáza 0 · Nastavenia</h3></header>
+        <ul>
+          <li><label><input type="checkbox"><span>Ovládač pripojený káblom alebo cez Xbox Wireless Adapter (nie Bluetooth)</span></label></li>
+          <li><label><input type="checkbox"><span>Kamera Tele Broadcast alebo Co-op (viac v sekcii <a href="#nastavenia">Nastavenia</a>)</span></label></li>
+          <li><label><input type="checkbox"><span>Nastavenia ovládača podľa odporúčaní nižšie</span></label></li>
+          <li><label><input type="checkbox"><span>10 minút v Practice Arena: vyskúšať každú strelu z tier listu</span></label></li>
+        </ul>
+        <p class="goalline"><b>Cieľ:</b> v zápase ťa neprekvapí žiadne tlačidlo.</p>
+        <div class="progress"><div></div></div>
+      </article>
+
+      <article class="card phase" data-phase="1">
+        <header><span class="when">Týždeň 1–2</span><h3>Fáza 1 · Obrana</h3></header>
+        <ul>
+          <li><label><input type="checkbox"><span>Jockey <kbd class="x sh">LT</kbd> ako základ – drž sa ~1 m od útočníka a čakaj na jeho ťažký dotyk</span></label></li>
+          <li><label><input type="checkbox"><span>5 zápasov bez jediného skluzu <kbd class="x xb">X</kbd></span></label></li>
+          <li><label><input type="checkbox"><span>Prepínať hráčov pravou páčkou <kbd class="x st">RS</kbd>, nie iba <kbd class="x sh">LB</kbd></span></label></li>
+          <li><label><input type="checkbox"><span>Stopérom nevybiehať z línie – presovať defenzívnym záložníkom</span></label></li>
+          <li><label><input type="checkbox"><span>Po každej prehre pozrieť replay aspoň jedného inkasovaného gólu</span></label></li>
+        </ul>
+        <p class="goalline"><b>Cieľ:</b> v priemere max. 1,5 inkasovaného gólu na zápas.</p>
+        <div class="progress"><div></div></div>
+      </article>
+
+      <article class="card phase" data-phase="2">
+        <header><span class="when">Týždeň 2–3</span><h3>Fáza 2 · Držanie lopty</h3></header>
+        <ul>
+          <li><label><input type="checkbox"><span>Krátke prihrávky <kbd class="x a">A</kbd>, keď je tlak – vrátiť loptu dozadu nie je hanba</span></label></li>
+          <li><label><input type="checkbox"><span>Zakrivený nábeh <kbd class="x sh">LB</kbd><span class="plus">+</span><kbd class="x sh">RB</kbd> pre spoluhráča bez lopty</span></label></li>
+          <li><label><input type="checkbox"><span>Prihraj a bež: <kbd class="x sh">LB</kbd><span class="plus">+</span><kbd class="x sh">RB</kbd><span class="plus">+</span><kbd class="x a">A</kbd></span></label></li>
+          <li><label><input type="checkbox"><span>Prihrávka do behu <kbd class="x y">Y</kbd> iba keď je nábeh voľný (mieri presne – je manuálna)</span></label></li>
+          <li><label><input type="checkbox"><span>Po zápase skontrolovať úspešnosť prihrávok v štatistikách</span></label></li>
+        </ul>
+        <p class="goalline"><b>Cieľ:</b> úspešnosť prihrávok 80 %+, držanie lopty aspoň 50 %.</p>
+        <div class="progress"><div></div></div>
+      </article>
+
+      <article class="card phase" data-phase="3">
+        <header><span class="when">Týždeň 3–4</span><h3>Fáza 3 · Zakončenie</h3></header>
+        <ul>
+          <li><label><input type="checkbox"><span>50 pokusov Low Driven <kbd class="x b">B</kbd><span class="then">→</span><kbd class="x b">B</kbd> v Arene na bližšiu žrď</span></label></li>
+          <li><label><input type="checkbox"><span>Trivela <kbd class="x sh">LT</kbd><span class="plus">+</span><kbd class="x b">B</kbd> z okraja šestnástky, keď by som inak strieľal slabšou nohou</span></label></li>
+          <li><label><input type="checkbox"><span>Power shot <kbd class="x sh">LB</kbd><span class="plus">+</span><kbd class="x sh">RB</kbd><span class="plus">+</span><kbd class="x b">B</kbd> len z 20–25 m a s voľným priestorom</span></label></li>
+          <li><label><input type="checkbox"><span>Prestať strieľať z 30+ metrov „len tak“</span></label></li>
+        </ul>
+        <p class="goalline"><b>Cieľ:</b> z troch striel na bránu aspoň jeden gól.</p>
+        <div class="progress"><div></div></div>
+      </article>
+
+      <article class="card phase" data-phase="4">
+        <header><span class="when">Týždeň 4–6</span><h3>Fáza 4 · Driblingy a triky</h3></header>
+        <ul>
+          <li><label><input type="checkbox"><span>Falošná strela <kbd class="x b">B</kbd><span class="then">→</span><kbd class="x a">A</kbd> v každom zápase aspoň 3×</span></label></li>
+          <li><label><input type="checkbox"><span>Ball Roll: podržať <kbd class="x st">RS</kbd> do strany</span></label></li>
+          <li><label><input type="checkbox"><span>Body Feint a Stepover bez pozerania na ovládač</span></label></li>
+          <li><label><input type="checkbox"><span>Jeden pokročilý trik (Roulette alebo Elastico) pre hráčov s 3★ / 5★</span></label></li>
+        </ul>
+        <p class="goalline"><b>Cieľ:</b> 2+ prekonaní hráči za zápas bez straty lopty.</p>
+        <div class="progress"><div></div></div>
+      </article>
+
+      <article class="card phase" data-phase="5">
+        <header><span class="when">Stále</span><h3>Fáza 5 · Hlava a herný plán</h3></header>
+        <ul>
+          <li><label><input type="checkbox"><span>Hrať v blokoch po 3–5 zápasov; po 2 prehrách za sebou pauza</span></label></li>
+          <li><label><input type="checkbox"><span>Pri vedení prepnúť mentalitu šípkou <kbd class="x dp">◀</kbd> na defenzívnejšiu, pri prehrávaní <kbd class="x dp">▶</kbd> na útočnejšiu</span></label></li>
+          <li><label><input type="checkbox"><span>Nevzdávať zápas pri 0:1 – súperi v nízkych divíziách robia rovnaké chyby</span></label></li>
+          <li><label><input type="checkbox"><span>Raz týždenne poslať Claudovi aktuálny tím na analýzu</span></label></li>
+        </ul>
+        <p class="goalline"><b>Cieľ:</b> postup približne o jednu divíziu každé 2 týždne.</p>
+        <div class="progress"><div></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STRELY ============ -->
+<section id="strely">
+  <div class="wrap">
+    <span class="eyebrow">Tier list · FC 27</span>
+    <h2>Strely</h2>
+    <p class="lead">Od najlepšej po najhoršiu. Klikni na strelu a zobrazí sa návod: kedy ju použiť, ako ju spraviť krok za krokom, čo robím zle a ako to trénovať.</p>
+
+    <div class="note">
+      <strong>Čo sa zmenilo v FC 27:</strong> Timed Finishing už nie je – dvojklik na <kbd class="x b">B</kbd> teraz robí Low Driven strelu. Finesse strela je slabšia (menej faleše, pomalšia animácia). PlayStyles pomáhajú menej a viac záleží na reálnych atribútoch hráča (Finishing, Shot Power, Curve). Všeobecne: <strong>sila 2,5–3 dieliky</strong> a tesne pred strelou pusti <kbd class="x sh">RT</kbd>.
+    </div>
+
+    <div class="tier tier-s">
+      <div class="tier-label">S</div>
+      <div class="tier-items">
+        <details class="move">
+          <summary>
+            <div class="top"><h4>Low Driven (nízka strela)</h4><span class="input"><kbd class="x b">B</kbd><span class="then">→</span><kbd class="x b">B</kbd></span></div>
+            <span class="tag">V šestnástke, 10–15 m, na bližšiu žrď. Najspoľahlivejšie zakončenie.</span>
+          </summary>
+          <div class="body">
+            <h5>Kedy</h5>
+            <p>Vo vnútri šestnástky, keď máš pred sebou brankára a trochu priestoru. Spoza šestnástky nie – nízka strela stratí silu.</p>
+            <h5>Ako na to</h5>
+            <ol>
+              <li>Ľavou páčkou <kbd class="x st">LS</kbd> zamier na bližšiu žrď (stranu, z ktorej prichádzaš).</li>
+              <li>Pusti šprint <kbd class="x sh">RT</kbd>.</li>
+              <li>Podrž <kbd class="x b">B</kbd> na cca 2,5 dielika a pusti.</li>
+              <li>Hneď ťukni <kbd class="x b">B</kbd> druhýkrát – musí to byť tesne po prvom, nie o sekundu neskôr.</li>
+            </ol>
+            <h5>Časté chyby</h5>
+            <ul>
+              <li>Viac ako 3 dieliky – lopta letí vysoko alebo vedľa.</li>
+              <li>Druhé ťuknutie neskoro – vyjde z toho obyčajná strela.</li>
+              <li>Čakanie príliš dlho – brankár ti zmenší uhol.</li>
+            </ul>
+            <h5>Varianty</h5>
+            <p>Finesse low driven: podrž <kbd class="x sh">RB</kbd> + <kbd class="x b">B</kbd><span class="then">→</span><kbd class="x b">B</kbd> (z uhla na vzdialený roh). Power low driven: <kbd class="x sh">LB</kbd><span class="plus">+</span><kbd class="x sh">RB</kbd> + <kbd class="x b">B</kbd><span class="then">→</span><kbd class="x b">B</kbd>.</p>
+            <h5>Tréning</h5>
+            <p>Practice Arena: 10 striel zľava, 10 sprava, 10 zo stredu. Počítaj, koľko ide na bránu.</p>
+            <h5>Hráči</h5>
+            <p>PlayStyle Low Driven / Low Driven+ pridáva presnosť. Rýchlosť strely už ale závisí len od atribútov (Finishing, Shot Power).</p>
+          </div>
+        </details>
+
+        <details class="move">
+          <summary>
+            <div class="top"><h4>Trivela (vonkajšou stranou)</h4><span class="input"><kbd class="x sh">LT</kbd><span class="plus">+</span><kbd class="x b">B</kbd></span></div>
+            <span class="tag">Z okraja šestnástky, keď je lopta na „zlej“ strane. Brankár ju ťažko číta.</span>
+          </summary>
+          <div class="body">
+            <h5>Kedy</h5>
+            <p>Na okraji šestnástky alebo tesne za ňou, keď by si inak musel strieľať slabšou nohou. Typicky pravák z ľavej strany – vonkajškom silnejšej nohy na vzdialený roh. Funguje aj s krajnými obrancami.</p>
+            <h5>Ako na to</h5>
+            <ol>
+              <li>Spomaľ a pusti <kbd class="x sh">RT</kbd>.</li>
+              <li>Podrž <kbd class="x sh">LT</kbd>.</li>
+              <li><kbd class="x st">LS</kbd> zamier na vzdialený roh.</li>
+              <li><kbd class="x b">B</kbd> na 2,5–3 dieliky.</li>
+            </ol>
+            <h5>Časté chyby</h5>
+            <ul>
+              <li>Trivela z veľmi ostrého uhla – lopta sa stočí von.</li>
+              <li>Strieľanie v plnom šprinte.</li>
+            </ul>
+            <h5>Tréning</h5>
+            <p>Arena: postav sa na roh šestnástky vľavo (pravák) a strieľaj 20× na vzdialený roh.</p>
+            <h5>Hráči</h5>
+            <p>Trivela PlayStyle+ ju robí ešte silnejšou – ak taký hráč existuje v rozpočte, oplatí sa.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <div class="tier tier-a">
+      <div class="tier-label">A</div>
+      <div class="tier-items">
+        <details class="move">
+          <summary>
+            <div class="top"><h4>Power Shot</h4><span class="input"><kbd class="x sh">LB</kbd><span class="plus">+</span><kbd class="x sh">RB</kbd><span class="plus">+</span><kbd class="x b">B</kbd></span></div>
+            <span class="tag">20–25 m od brány s voľným priestorom. Najsilnejšia strela spoza šestnástky.</span>
+          </summary>
+          <div class="body">
+            <h5>Kedy</h5>
+            <p>5–10 m pred šestnástkou, keď pred tebou nikto nestojí. Má dlhé napriahnutie, takže blízky obranca ju zablokuje.</p>
+            <h5>Ako na to</h5>
+            <ol>
+              <li>Pozri, či ti obranca nestojí v ceste strely.</li>
+              <li>Podrž <kbd class="x sh">LB</kbd><span class="plus">+</span><kbd class="x sh">RB</kbd>.</li>
+              <li><kbd class="x b">B</kbd> na 2–3 dieliky (viac nie je lepšie).</li>
+              <li>Mier je ťažší – miri trochu dovnútra od žrde, nie presne na ňu.</li>
+            </ol>
+            <h5>Časté chyby</h5>
+            <ul>
+              <li>Power shot v preplnenej šestnástke – zablokujú ťa.</li>
+              <li>Plná sila – lopta letí nad.</li>
+            </ul>
+            <h5>Tip</h5>
+            <p>Aj nepresná power strela často skončí rohom. A keď súper vie, že strieľaš z diaľky, musí vystúpiť – to otvorí priestor na prihrávku.</p>
+            <h5>Hráči</h5>
+            <p>Power Shot+ je najlepší na stredných záložníkoch s vysokým Shot Power a Long Shots.</p>
+          </div>
+        </details>
+
+        <details class="move">
+          <summary>
+            <div class="top"><h4>Low Driven Finesse</h4><span class="input"><kbd class="x sh">RB</kbd><span class="plus">+</span><kbd class="x b">B</kbd><span class="then">→</span><kbd class="x b">B</kbd></span></div>
+            <span class="tag">Keď ideš z krídla dovnútra – nízko na vzdialený roh.</span>
+          </summary>
+          <div class="body">
+            <h5>Kedy</h5>
+            <p>Krídelník si stiahne loptu dovnútra šestnástky a vidí vzdialený roh. Nízka strela s rotáciou, ktorú brankár ťažko chytí.</p>
+            <h5>Ako na to</h5>
+            <ol>
+              <li>Zamier <kbd class="x st">LS</kbd> na vzdialený roh.</li>
+              <li>Podrž <kbd class="x sh">RB</kbd>, nabi <kbd class="x b">B</kbd> na ~2,5 dielika a hneď ťukni <kbd class="x b">B</kbd> ešte raz.</li>
+            </ol>
+            <h5>Časté chyby</h5>
+            <p>Z ostrého uhla blízko bránkovej čiary – tam radšej prihraj do stredu.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <div class="tier tier-b">
+      <div class="tier-label">B</div>
+      <div class="tier-items">
+        <details class="move">
+          <summary>
+            <div class="top"><h4>Obyčajná strela</h4><span class="input"><kbd class="x b">B</kbd></span></div>
+            <span class="tag">Keď váhaš, pri dorážkach a prvých dotykoch.</span>
+          </summary>
+          <div class="body">
+            <h5>Kedy</h5>
+            <p>Dorážka, rýchla strela po prihrávke, alebo keď nemáš čas na nič iné. Spoľahlivá, ale bez výhody.</p>
+            <h5>Ako na to</h5>
+            <ol>
+              <li>Zamier <kbd class="x st">LS</kbd> do rohu, nie na brankára.</li>
+              <li><kbd class="x b">B</kbd> na 2–3 dieliky.</li>
+            </ol>
+          </div>
+        </details>
+
+        <details class="move">
+          <summary>
+            <div class="top"><h4>Finesse (placírka)</h4><span class="input"><kbd class="x sh">RB</kbd><span class="plus">+</span><kbd class="x b">B</kbd></span></div>
+            <span class="tag">V FC 27 oslabená. Len s dobrým strelcom a voľným uhlom.</span>
+          </summary>
+          <div class="body">
+            <h5>Kedy</h5>
+            <p>Len keď máš hráča s vysokým Finishing a Curve (ideálne Finesse Shot+) a čistý výhľad na vzdialený roh. Inak radšej Low Driven.</p>
+            <h5>Ako na to</h5>
+            <ol>
+              <li>Zamier na vzdialený roh.</li>
+              <li>Podrž <kbd class="x sh">RB</kbd> a <kbd class="x b">B</kbd> na ~2,5 dielika.</li>
+            </ol>
+            <h5>Prečo nie S</h5>
+            <p>EA v FC 27 zmenšila falš a spomalila animáciu, brankári ju chytajú častejšie. Zvyk z FC 24–26 „všetko placírkou“ teraz stojí góly.</p>
+          </div>
+        </details>
+
+        <details class="move">
+          <summary>
+            <div class="top"><h4>Hlavička</h4><span class="input"><kbd class="x b">B</kbd><span class="then">pri centri</span></span></div>
+            <span class="tag">Ťažšie ju vyhrať, ale keď ju trafíš, je presnejšia.</span>
+          </summary>
+          <div class="body">
+            <h5>Kedy</h5>
+            <p>Centre a rohy. V FC 27 hráči už pri rohoch nestoja automaticky správne – nábeh si musíš načasovať sám.</p>
+            <h5>Ako na to</h5>
+            <ol>
+              <li>Pri rohu máš po výbere miesta krátke okno: posuň hráča, prepni sa, prípadne podrž <kbd class="x sh">RB</kbd> (Avoidance) na uhnutie z tlačenice.</li>
+              <li>Keď lopta letí, <kbd class="x b">B</kbd> a <kbd class="x st">LS</kbd> mier dole k žrdi.</li>
+            </ol>
+            <h5>Hráči</h5>
+            <p>Vysoký hráč s Heading Accuracy a Jumping; Precision Header pomáha.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <div class="tier tier-d">
+      <div class="tier-label">D</div>
+      <div class="tier-items">
+        <details class="move">
+          <summary>
+            <div class="top"><h4>Lob (Chip)</h4><span class="input"><kbd class="x sh">LB</kbd><span class="plus">+</span><kbd class="x b">B</kbd></span></div>
+            <span class="tag">Takmer nikdy. Iba keď brankár vybehne ďaleko z brány.</span>
+          </summary>
+          <div class="body">
+            <h5>Kedy</h5>
+            <p>Brankár je mimo brány alebo sa ti hodí pod nohy v sóle. Inak skoro vždy existuje lepšia strela.</p>
+            <h5>Ako na to</h5>
+            <ol>
+              <li>Podrž <kbd class="x sh">LB</kbd>, <kbd class="x b">B</kbd> na 1,5–2 dieliky (podľa vzdialenosti).</li>
+            </ol>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRIKY ============ -->
+<section id="triky">
+  <div class="wrap">
+    <span class="eyebrow">Skill moves · Xbox ovládač</span>
+    <h2>Triky s loptou</h2>
+    <p class="lead">Nemusím vedieť 40 trikov. Stačí 4–5, ktoré spravím bez rozmýšľania. Uč sa ich v tomto poradí. Hviezdičky ukazujú, koľko „skill“ hviezdičiek musí mať hráč.</p>
+
+    <div class="note">Smery pravej páčky <kbd class="x st">RS</kbd> sú vždy <strong>relatívne k smeru, ktorým hráč beží</strong>, nie ku kamere. Ak sa ti vstup nezhoduje, v hre otvor Pauza → <strong>Skill Moves Help</strong> – tam je presný zoznam.</div>
+
+    <div class="tier-items" style="margin-top: 20px;">
+      <details class="move">
+        <summary>
+          <div class="top"><h4>1 · Falošná strela</h4><span class="stars">★</span></div>
+          <span class="input"><kbd class="x b">B</kbd><span class="then">→</span><kbd class="x a">A</kbd><span class="plus">+</span><kbd class="x st">LS</kbd> smer</span>
+          <span class="tag">Najužitočnejší trik pre slabšieho hráča.</span>
+        </summary>
+        <div class="body">
+          <h5>Kedy</h5>
+          <p>Pred bránou, keď sa obranca chystá zablokovať strelu. Obranca sa hodí, ty zmeníš smer a strieľaš.</p>
+          <h5>Ako</h5>
+          <ol>
+            <li>Stlač <kbd class="x b">B</kbd> (začne napriahnutie) a hneď <kbd class="x a">A</kbd> – strelu tým zrušíš.</li>
+            <li>Zároveň drž <kbd class="x st">LS</kbd> do strany, kam chceš ísť.</li>
+            <li>Po fintu hneď Low Driven <kbd class="x b">B</kbd><span class="then">→</span><kbd class="x b">B</kbd>.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="move">
+        <summary>
+          <div class="top"><h4>2 · Ball Roll</h4><span class="stars">★★</span></div>
+          <span class="input">Podrž <kbd class="x st">RS</kbd> doľava / doprava</span>
+          <span class="tag">Posun lopty do strany – otvorí strelu aj prihrávku.</span>
+        </summary>
+        <div class="body">
+          <h5>Kedy</h5>
+          <p>Stojíš pred obrancom na okraji šestnástky a potrebuješ krok do strany na strelu. Viacero guidov ho volá najužitočnejším trikom v hre.</p>
+          <h5>Ako</h5>
+          <ol>
+            <li>Podrž <kbd class="x st">RS</kbd> do strany (krátko = jeden posun, dlhšie = dlhšie vedenie).</li>
+            <li>Ihneď strela alebo prihrávka – nečakaj, kým obranca dobehne.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="move">
+        <summary>
+          <div class="top"><h4>3 · Body Feint</h4><span class="stars">★★</span></div>
+          <span class="input">Švihni <kbd class="x st">RS</kbd> doľava / doprava</span>
+          <span class="tag">Rýchla finta telom, ideálna v behu po krídle.</span>
+        </summary>
+        <div class="body">
+          <h5>Kedy</h5>
+          <p>Bežíš na obrancu, finta na jednu stranu, potom <kbd class="x st">LS</kbd> na druhú.</p>
+          <h5>Ako</h5>
+          <ol>
+            <li>Krátko švihni <kbd class="x st">RS</kbd> do strany a pusti.</li>
+            <li><kbd class="x st">LS</kbd> choď na opačnú stranu.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="move">
+        <summary>
+          <div class="top"><h4>4 · Stepover / Reverse Stepover</h4><span class="stars">★★</span></div>
+          <span class="input">Otoč <kbd class="x st">RS</kbd> spredu do strany (reverse: zo strany dopredu)</span>
+          <span class="tag">Klasická finta nohou ponad loptu.</span>
+        </summary>
+        <div class="body">
+          <h5>Kedy</h5>
+          <p>Proti obrancovi, ktorý stojí a čaká. Po 1–2 stepoveroch zmeň smer a zrýchli.</p>
+          <h5>Ako</h5>
+          <ol>
+            <li>Stepover: <kbd class="x st">RS</kbd> z polohy „dopredu“ plynulo do strany.</li>
+            <li>Reverse: <kbd class="x st">RS</kbd> zo strany plynulo dopredu.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="move">
+        <summary>
+          <div class="top"><h4>5 · Drag Back</h4><span class="stars">★★</span></div>
+          <span class="input">Podrž <kbd class="x sh">LB</kbd><span class="plus">+</span><kbd class="x sh">RB</kbd>, švihni <kbd class="x st">LS</kbd> dozadu</span>
+          <span class="tag">Stiahnutie lopty späť, keď ťa obranca dobieha.</span>
+        </summary>
+        <div class="body">
+          <h5>Kedy</h5>
+          <p>Obranca je pred tebou a hrozí strata. Stiahneš loptu a otočíš hru dozadu alebo do strany.</p>
+        </div>
+      </details>
+
+      <details class="move">
+        <summary>
+          <div class="top"><h4>6 · Roulette (otočka)</h4><span class="stars">★★★</span></div>
+          <span class="input">Otoč <kbd class="x st">RS</kbd> o ~270° zdola do strany</span>
+          <span class="tag">Otočka okolo obrancu tesne pred jeho zákrokom.</span>
+        </summary>
+        <div class="body">
+          <h5>Kedy</h5>
+          <p>Obranca sa ide do teba pustiť. Načasovanie je všetko – príliš skoro a obranca sa len pootočí.</p>
+          <h5>Pozor</h5>
+          <p>Len pre hráčov s 3★ a viac. Precvič v Arene, smer rotácie je ľahké pomýliť.</p>
+        </div>
+      </details>
+
+      <details class="move">
+        <summary>
+          <div class="top"><h4>7 · Elastico</h4><span class="stars">★★★★★</span></div>
+          <span class="input"><kbd class="x st">RS</kbd> doprava → dole → doľava (reverse opačne)</span>
+          <span class="tag">Na neskôr. Len s 5★ hráčom a v 1v1 situáciách.</span>
+        </summary>
+        <div class="body">
+          <h5>Kedy</h5>
+          <p>1v1 proti statickému obrancovi. Keď sa nepodarí, strácaš loptu – preto až vo Fáze 4.</p>
+        </div>
+      </details>
+    </div>
+
+    <h3 style="margin-top: 36px;">Driblingové základy (dôležitejšie ako triky)</h3>
+    <div class="grid grid-3">
+      <div class="card"><strong>Krytie lopty <kbd class="x sh">LT</kbd></strong><p class="goalline" style="margin:6px 0 0;">S loptou podrž <kbd class="x sh">LT</kbd> – hráč sa otočí chrbtom k súperovi a kryje loptu. Ideálne pri tlaku pri postrannej čiare.</p></div>
+      <div class="card"><strong>Off-balance dribbling</strong><p class="goalline" style="margin:6px 0 0;">Nové v FC 27: hráč s dobrou Balance, Agility a Dribbling sa po strčení len zapotáca a ty ho môžeš ďalej viesť. Nepúšťaj páčku, keď ťa niekto drgne.</p></div>
+      <div class="card"><strong>Menej šprintu</strong><p class="goalline" style="margin:6px 0 0;">Bez <kbd class="x sh">RT</kbd> sa hráč otáča rýchlejšie a má loptu bližšie. Šprint až keď je pred tebou voľno.</p></div>
+      <div class="card"><strong>Zjednodušené triky</strong><p class="goalline" style="margin:6px 0 0;">Nastavenia → Simplified Skill Moves: ON. Hra urobí vhodný trik, keď pohneš <kbd class="x st">RS</kbd> do jedného zo 4 smerov. Dobré na začiatok.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBRANA ============ -->
+<section id="obrana">
+  <div class="wrap">
+    <span class="eyebrow">Najdôležitejšia sekcia</span>
+    <h2>Obrana</h2>
+    <p class="lead">V FC 27 (Competitive mode, ktorý sa hrá v Rivals) AI obrancovia sami loptu nezoberú – len držia pozíciu, kým nezasiahneš ty. Za to je jockey rýchlejší a manuálny stand tackle má väčší dosah ako v FC 26.</p>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Jockey <kbd class="x sh">LT</kbd></h3>
+        <ol>
+          <li>Rýchlo sa priblíž, pred útočníkom spomaľ.</li>
+          <li>Podrž <kbd class="x sh">LT</kbd> a drž sa ~1 m od neho, zrkadli jeho pohyb <kbd class="x st">LS</kbd>.</li>
+          <li>Čakaj na ťažký dotyk (lopta mu odskočí ďalej od nohy).</li>
+          <li>Až vtedy jedno ťuknutie <kbd class="x b">B</kbd>.</li>
+        </ol>
+        <p class="goalline">Sprint jockey <kbd class="x sh">LT</kbd><span class="plus">+</span><kbd class="x sh">RT</kbd> len na dobehnutie, nie pri samotnom súboji.</p>
+      </div>
+      <div class="card">
+        <h3>Zákroky</h3>
+        <ul>
+          <li><strong>Stand tackle <kbd class="x b">B</kbd>:</strong> jedno načasované ťuknutie. Nespamovať – každé zlé ťuknutie ťa vyradí z hry.</li>
+          <li><strong>Skluz <kbd class="x xb">X</kbd>:</strong> len ako posledná záchrana, nikdy v šestnástke.</li>
+          <li><strong>Teammate contain <kbd class="x sh">RB</kbd>:</strong> spoluhráč v FC 27 bráni z väčšej diaľky – len zdrží, loptu nezoberie.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Prepínanie hráčov</h3>
+        <ul>
+          <li><kbd class="x st">RS</kbd> potiahni smerom k hráčovi, ktorého chceš ovládať – presnejšie ako <kbd class="x sh">LB</kbd>.</li>
+          <li>Prepni sa na hráča, ktorý je <strong>v ceste</strong> útočníka – skôr, než ťa obehne.</li>
+          <li>Manuálne ovládaný hráč dosiahne na prihrávky ďalej ako AI. Postav sa do prihrávkovej línie.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Pozícia</h3>
+        <ul>
+          <li>Krajným obrancom najprv zavri <strong>vnútornú</strong> prihrávku – útočník ostane zaseknutý pri čiare.</li>
+          <li>Stopérov nevyťahuj z línie. Keď vybehneš stopérom, za ním vznikne diera.</li>
+          <li>Na presing použi defenzívneho záložníka (CDM).</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 32px;">Najčastejšie chyby v Div 10–8</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Chyba</th><th>Prečo bolí</th><th>Čo namiesto toho</th></tr></thead>
+        <tbody>
+          <tr><td>Stále držím <kbd class="x b">B</kbd> / spamujem zákrok</td><td>Hráč sa vrhá a útočník ho obehne</td><td>Jockey <kbd class="x sh">LT</kbd>, jedno ťuknutie na ťažký dotyk</td></tr>
+          <tr><td>Bránim v šprinte</td><td>Nestihnem reagovať na zmenu smeru</td><td>Šprint len na dobehnutie, potom spomaliť</td></tr>
+          <tr><td>Vybieham stopérom</td><td>Za ním ostane voľný priestor</td><td>Stopér drží líniu, presuje CDM</td></tr>
+          <tr><td>Skluz v šestnástke</td><td>Penalta alebo voľný útočník</td><td>Stáť medzi loptou a bránou</td></tr>
+          <tr><td>Neprepínam hráčov</td><td>Ovládam hráča ďaleko od akcie</td><td>Prepínať <kbd class="x st">RS</kbd> skôr, nie neskôr</td></tr>
+          <tr><td>Pri rohu nič nerobím</td><td>Hráči sa v FC 27 sami nepostavia</td><td>V okne pred centrom prepnúť na hráča a pokryť priestor</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TAKTIKA ============ -->
+<section id="taktika">
+  <div class="wrap">
+    <span class="eyebrow">Formácia a custom tactics</span>
+    <h2>Taktika</h2>
+    <p class="lead">Meta formácia v FC 27 Ultimate Team je 4-2-1-3. Dva defenzívni záložníci sú pre slabšieho hráča poistka – kryjú obranu, keď stratím loptu.</p>
+
+    <div class="tactics-layout">
+      <div class="pitch" aria-label="Formácia 4-2-1-3">
+        <div class="box top"></div><div class="box bottom"></div>
+        <div class="dot" style="--x:50%;--y:11%"><i>ST</i><small>Advanced Forward</small></div>
+        <div class="dot" style="--x:16%;--y:19%"><i>LW</i><small>Inside Forward</small></div>
+        <div class="dot" style="--x:84%;--y:19%"><i>RW</i><small>Inside Forward</small></div>
+        <div class="dot" style="--x:50%;--y:36%"><i>CAM</i><small>Shadow Striker</small></div>
+        <div class="dot" style="--x:33%;--y:54%"><i>CDM</i><small>Holding</small></div>
+        <div class="dot" style="--x:67%;--y:54%"><i>CDM</i><small>Box Crasher</small></div>
+        <div class="dot" style="--x:12%;--y:71%"><i>LB</i><small>Fullback</small></div>
+        <div class="dot" style="--x:37%;--y:77%"><i>CB</i><small>Defender</small></div>
+        <div class="dot" style="--x:63%;--y:77%"><i>CB</i><small>Defender</small></div>
+        <div class="dot" style="--x:88%;--y:71%"><i>RB</i><small>Fullback</small></div>
+        <div class="dot" style="--x:50%;--y:91%"><i>GK</i><small>Goalkeeper</small></div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Custom tactics (meta)</h3>
+          <div class="table-wrap">
+            <table>
+              <tbody>
+                <tr><th>Build-up</th><td>Counter (alebo Balanced, ak chceš viac držať loptu)</td></tr>
+                <tr><th>Defensive approach</th><td>Výška línie ~55</td></tr>
+                <tr><th>CDM</th><td>Jeden Holding, druhý Box Crasher</td></tr>
+                <tr><th>Krídla</th><td>Inside Forward</td></tr>
+                <tr><th>CAM</th><td>Shadow Striker (alt. Playmaker)</td></tr>
+                <tr><th>ST</th><td>Advanced Forward</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Moja „bezpečná“ verzia</h3>
+          <p class="goalline" style="margin:0;">Kým som v Div 10–8: <strong>oba CDM ako Holding</strong> a obrancovia bez útočných rolí. Menej gólov dám, ale ešte menej dostanem. Keď inkasujem v priemere pod 1,5 gólu, prepnem druhého CDM na Box Crasher.</p>
+        </div>
+        <div class="card">
+          <h3>Alternatívy od profíkov</h3>
+          <ul>
+            <li><strong>4-4-1-1</strong> – odporúča Tekkz, prirodzenejší defenzívny tvar.</li>
+            <li><strong>4-3-1-2</strong> – odporúča RedLac, rýchle kombinácie stredom.</li>
+            <li><strong>4-1-2-1-2 (2) úzka</strong> – pre hru cez stred s dvomi útočníkmi.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HIDDEN GEMS ============ -->
+<section id="gems">
+  <div class="wrap">
+    <span class="eyebrow">Ultimate Team · lacné, ale hrajú nad cenu</span>
+    <h2>Hidden gems</h2>
+    <p class="lead">Lacné karty (väčšinou do 5–10K), ktoré v hre fungujú lepšie, než napovedá rating. Pri výbere v FC 27 rozhoduje hlavne <strong>tempo</strong> a <strong>akcelerácia</strong> – PlayStyles pomáhajú menej ako vlani.</p>
+
+    <div class="note warn">Ceny sú z konca septembra 2026 a od vtedy sa mohli zmeniť (väčšinou klesajú). Pred kúpou si cenu over na trhu alebo na <a href="https://www.fut.gg/players/best/cheap/" target="_blank" rel="noopener">FUT.GG</a>.</div>
+
+    <div class="gem-group">
+      <h3>Útok</h3>
+      <div class="grid grid-3">
+        <div class="gem"><div class="row"><span class="name">Racheal Kundananji</span><span class="pos">ST/W</span></div><div class="row"><span class="pills"><span class="pill">94 PAC</span><span class="pill">Ženská karta</span></span><span class="price">&lt; 5K</span></div><p>V každom zozname lacných hráčov. Brutálne tempo za pár tisíc.</p></div>
+        <div class="gem"><div class="row"><span class="name">Rosemonde Kouassi</span><span class="pos">W</span></div><div class="row"><span class="pills"><span class="pill">94 PAC</span><span class="pill ps">Quick Step+</span></span><span class="price">&lt; 5K</span></div><p>Rýchle krídlo, dobre zrýchľuje z miesta.</p></div>
+        <div class="gem"><div class="row"><span class="name">Vicki Becho</span><span class="pos">W</span></div><div class="row"><span class="pills"><span class="pill">90 PAC</span><span class="pill">86 DRI</span></span><span class="price">&lt; 5K</span></div><p>Tempo + dribling, Ligue 1. Dobrá na triky.</p></div>
+        <div class="gem"><div class="row"><span class="name">Mohamed Amoura</span><span class="pos">ST</span></div><div class="row"><span class="pills"><span class="pill">87 PAC</span><span class="pill">86 DRI</span></span><span class="price">&lt; 5K</span></div><p>Lacný útočník z Ligue 1, ľahko sa s ním hrá.</p></div>
+        <div class="gem"><div class="row"><span class="name">Julián Quiñones</span><span class="pos">ST</span></div><div class="row"><span class="pills"><span class="pill">91 PAC</span></span><span class="price">over cenu</span></div><p>Rýchly hrot pre hru za obranu.</p></div>
+        <div class="gem"><div class="row"><span class="name">Barbra Banda</span><span class="pos">ST</span></div><div class="row"><span class="pills"><span class="pill">Ženská karta</span></span><span class="price">~10K</span></div><p>Silnejšia voľba do útoku, keď je rozpočet.</p></div>
+      </div>
+    </div>
+
+    <div class="gem-group">
+      <h3>Stred</h3>
+      <div class="grid grid-3">
+        <div class="gem"><div class="row"><span class="name">Georginio Rutter</span><span class="pos">CAM</span></div><div class="row"><span class="pills"><span class="pill">5★ triky</span><span class="pill">5★ slabšia noha</span></span><span class="price">&lt; 5K</span></div><p>Strieľa oboma nohami a vie všetky triky – ideálny na tréning driblingov.</p></div>
+        <div class="gem"><div class="row"><span class="name">Kim Little</span><span class="pos">CDM/CM</span></div><div class="row"><span class="pills"><span class="pill ps">Press Proven+</span><span class="pill">Ženská karta</span></span><span class="price">&lt; 5K</span></div><p>Najčastejšie odporúčaná lacná stredopoliarka.</p></div>
+        <div class="gem"><div class="row"><span class="name">Elliot Anderson</span><span class="pos">CDM</span></div><div class="row"><span class="pills"><span class="pill ps">Anticipate+</span><span class="pill">Premier League</span></span><span class="price">&lt; 5K</span></div><p>Defenzívny záložník, ktorý číta hru.</p></div>
+        <div class="gem"><div class="row"><span class="name">Aleix García</span><span class="pos">CM</span></div><div class="row"><span class="pills"><span class="pill">Playmaker</span></span><span class="price">lacný</span></div><p>Lacný rozohrávač s dobrou prihrávkou.</p></div>
+      </div>
+    </div>
+
+    <div class="gem-group">
+      <h3>Obrana a brankár</h3>
+      <div class="grid grid-3">
+        <div class="gem"><div class="row"><span class="name">Jayden Oosterwolde</span><span class="pos">CB</span></div><div class="row"><span class="pills"><span class="pill">88 PAC</span><span class="pill">192 cm</span></span><span class="price">&lt; 5K</span></div><p>Rýchly a vysoký stopér – presne to, čo v nízkych divíziách treba.</p></div>
+        <div class="gem"><div class="row"><span class="name">Fikayo Tomori</span><span class="pos">CB</span></div><div class="row"><span class="pills"><span class="pill">85 PAC</span><span class="pill">Serie A</span></span><span class="price">&lt; 5K</span></div><p>Rýchly stopér, dobre dobieha.</p></div>
+        <div class="gem"><div class="row"><span class="name">Maya Le Tissier</span><span class="pos">CB</span></div><div class="row"><span class="pills"><span class="pill">84 PAC</span><span class="pill ps">Block+</span></span><span class="price">&lt; 5K</span></div><p>Blokuje strely, ženská karta.</p></div>
+        <div class="gem"><div class="row"><span class="name">Konrad Laimer</span><span class="pos">RB/LB</span></div><div class="row"><span class="pills"><span class="pill">86 PAC</span><span class="pill">81 DEF</span></span><span class="price">over cenu</span></div><p>Krajný obranca, ktorý vie aj brániť.</p></div>
+        <div class="gem"><div class="row"><span class="name">Matheus Nunes</span><span class="pos">RB/LB</span></div><div class="row"><span class="pills"><span class="pill">87 PAC</span><span class="pill">Premier League</span></span><span class="price">over cenu</span></div><p>Tempo na krídle obrany.</p></div>
+        <div class="gem"><div class="row"><span class="name">Wladimiro Falcone</span><span class="pos">GK</span></div><div class="row"><span class="pills"><span class="pill ps">Footwork+</span><span class="pill">Serie A</span></span><span class="price">&lt; 1K</span></div><p>Najlacnejší dobrý brankár.</p></div>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 32px;">Ako nájsť hidden gem sám</h3>
+    <ul>
+      <li>Filtruj v trhu podľa tempa: krídla a útočníci <strong>88+ PAC</strong>, stopéri <strong>80+ PAC</strong>.</li>
+      <li>Ženské karty majú často vyššie tempo za nižšiu cenu.</li>
+      <li>Pozri <strong>Evolutions</strong> – lacnú kartu sa dá vylepšiť bez coinov.</li>
+      <li>SBC odmeny a hráči z objectives bývajú lepší ako zlaté karty za rovnakú cenu.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ MÔJ TÍM ============ -->
+<section id="tim">
+  <div class="wrap">
+    <span class="eyebrow">Analýza od Clauda</span>
+    <h2>Môj tím</h2>
+    <p class="lead">Moja aktuálna zostava a koho vymeniť, za koho a prečo. Aktualizuje sa vždy, keď pošlem Claudovi nový tím.</p>
+    <div id="team-root"></div>
+  </div>
+</section>
+
+<!-- ============ NASTAVENIA ============ -->
+<section id="nastavenia">
+  <div class="wrap">
+    <span class="eyebrow">PC + Xbox ovládač</span>
+    <h2>Nastavenia</h2>
+    <p class="lead">Správne nastavenia nie sú cheat, ale ušetria veľa zbytočných chýb. Toto je rozumný štart pre hráča v nízkych divíziách.</p>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Ovládač a PC</h3>
+        <ul>
+          <li>Ovládač <strong>na kábli</strong> alebo cez <strong>Xbox Wireless Adapter</strong>. Bluetooth má najväčšie oneskorenie.</li>
+          <li>Ak hráš cez Steam a tlačidlá blbnú: knižnica → FC 27 → Vlastnosti → Ovládač → <strong>vypnúť Steam Input</strong>.</li>
+          <li>Hra vo <strong>fullscreene</strong>, V-Sync vypnutý, stabilné FPS (radšej nižšie detaily ako trhanie).</li>
+          <li>Zavri prehliadač a overlaye (Discord, Xbox Game Bar), ak ti hra seká.</li>
+          <li>Vibrácie ovládača vypnúť – menej rozptyľujú.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Kamera</h3>
+        <ul>
+          <li><strong>Tele Broadcast</strong> alebo <strong>Co-op</strong> – vidíš viac ihriska a voľné priestory.</li>
+          <li>Výšku a zoom zvýš, kým nevidíš aspoň pol ihriska.</li>
+          <li>Indikátor ďalšieho hráča na prepnutie: <strong>zapnutý</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 28px;">Controller settings</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Nastavenie</th><th>Odporúčam</th><th>Prečo</th></tr></thead>
+        <tbody>
+          <tr><td>Passing Assistance</td><td>Assisted</td><td>Kým nemám istotu v prihrávkach, nech mi hra pomáha s mierením.</td></tr>
+          <tr><td>Through Ball Assistance</td><td>Assisted</td><td>Through balls sú v FC 27 aj tak prísnejšie na smer.</td></tr>
+          <tr><td>Shot Assistance</td><td>Assisted</td><td>Manuálne strely sú pre pokročilých.</td></tr>
+          <tr><td>Cross Assistance</td><td>Assisted</td><td>Centre v FC 27 idú do priestoru, nie na hráča – pomoc sa hodí.</td></tr>
+          <tr><td>Auto Switching</td><td>Air Balls</td><td>Hra ma prepne len pri vysokých loptách, inak prepínam sám.</td></tr>
+          <tr><td>Auto Switch Move Assistance</td><td>None</td><td>Po prepnutí hráč neutečie inam, než chcem.</td></tr>
+          <tr><td>Right Stick Switching Reference</td><td>Relative to Player</td><td>Prepínanie <kbd class="x st">RS</kbd> podľa pozície hráča, nie kamery.</td></tr>
+          <tr><td>Pass Block Assist</td><td>On</td><td>Pomáha blokovať prihrávky.</td></tr>
+          <tr><td>Simplified Skill Moves</td><td>On (zatiaľ)</td><td>Kontextové triky jedným smerom <kbd class="x st">RS</kbd>. Vypnúť vo Fáze 4.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="goalline">Názvy nastavení sú z anglickej verzie hry. Ak máš hru v inom jazyku, hľadaj ich v Settings → Controller Settings.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Zdroje</strong> (informácie platné k októbru 2026, meta sa mení s patchmi):</p>
+    <ul>
+      <li><a href="https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-gameplay-deep-dive" target="_blank" rel="noopener">EA SPORTS FC 27 Pitch Notes – Gameplay Deep Dive</a> (oficiálne zmeny v obrane, behoch, PlayStyles)</li>
+      <li><a href="https://games.gg/ea-sports-fc-27/guides/ea-fc-27-shooting-guide/" target="_blank" rel="noopener">games.gg – FC 27 Shooting Guide</a> a <a href="https://liquidfc.gg/ea-fc-27/shooting-finishing" target="_blank" rel="noopener">LiquidFC – Shooting &amp; Finishing</a></li>
+      <li><a href="https://realsport101.com/article/fc-27-skill-moves-guide-new-skills-meta-techniques" target="_blank" rel="noopener">RealSport101 – FC 27 Skill Moves</a> a <a href="https://games.gg/ea-sports-fc-27/guides/ea-fc-27-skill-moves-complete-guide/" target="_blank" rel="noopener">games.gg – Skill Moves</a></li>
+      <li><a href="https://www.fifplay.com/fc-27-defending-tips/" target="_blank" rel="noopener">FIFPlay – FC 27 Defending Tips</a></li>
+      <li><a href="https://www.dexerto.com/wikis/ea-fc-27/best-formations-and-custom-tactics/" target="_blank" rel="noopener">Dexerto – Formations &amp; Custom Tactics</a> a <a href="https://www.redbull.com/gb-en/best-ea-fc-27-custom-tactics" target="_blank" rel="noopener">Red Bull – Tekkz &amp; RedLac tactics</a></li>
+      <li><a href="https://futfilters.com/blog/fc-27-best-players-under-10k-cheap-meta-picks-by-position-fast-cbs-strikers" target="_blank" rel="noopener">FutFilters – Best players under 10K</a> a <a href="https://www.fut.gg/players/best/cheap/" target="_blank" rel="noopener">FUT.GG – Best cheap players</a></li>
+    </ul>
+    <p>Neoficiálna fanúšikovská stránka, nie je spojená s EA SPORTS. Obsah udržiava Claude (AI) podľa mojich zadaní.</p>
+  </div>
+</footer>
+
+<script src="data/team.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
