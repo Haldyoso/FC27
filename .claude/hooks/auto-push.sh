@@ -12,9 +12,11 @@ if [ -n "$(git status --porcelain)" ]; then
     -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>" || exit 0
 fi
 
-# Push iba ak je lokálna vetva pred origin/main (alebo origin/main ešte neexistuje).
-if ! git rev-parse --verify -q origin/main >/dev/null || [ -n "$(git log origin/main..HEAD --oneline)" ]; then
-  if git push -q origin HEAD:main >/dev/null 2>&1; then
+# GitHub Pages sa publikuje z vetvy gh-pages, preto pushujeme HEAD do main aj gh-pages.
+# Push iba ak sa niektorá z nich líši od lokálneho HEAD.
+head=$(git rev-parse HEAD)
+if [ "$head" != "$(git rev-parse -q --verify origin/main)" ] || [ "$head" != "$(git rev-parse -q --verify origin/gh-pages)" ]; then
+  if git push -q origin HEAD:main HEAD:gh-pages >/dev/null 2>&1; then
     echo '{"systemMessage":"FC27: zmeny pushnuté na GitHub"}'
   else
     echo '{"systemMessage":"FC27: push na GitHub zlyhal – skontroluj prihlásenie (git push origin main)"}'

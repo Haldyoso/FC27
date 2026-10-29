@@ -16,8 +16,10 @@ Po každej zmene súborov v tomto repe **vždy** sprav commit s výstižnou spr�
 ```bash
 git add -A
 git commit -m "Popis zmeny"
-git push origin main
+git push origin main main:gh-pages
 ```
+
+GitHub Pages sa publikuje z vetvy **`gh-pages`** – vždy pushuj `main` aj `gh-pages` (rovnaký commit). Stránka sa prebuduje do 1–2 minút.
 
 Pre istotu je v `.claude/settings.json` aj Stop hook (`.claude/hooks/auto-push.sh`), ktorý na konci každej odpovede commitne a pushne všetko, čo ostalo necommitnuté.
 

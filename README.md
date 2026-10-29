@@ -17,7 +17,7 @@ Môj osobný návod, ako sa zlepšiť v **EA SPORTS FC 27** (PC + Xbox ovládač
 
 ## Ako sa stránka aktualizuje
 
-Obsah upravuje Claude (AI). Po každej úprave sa zmeny automaticky commitnú a pushnú do tohto repozitára a GitHub Pages stránku za pár minút prebuduje.
+Obsah upravuje Claude (AI). Po každej úprave sa zmeny automaticky commitnú a pushnú do vetiev `main` aj `gh-pages` (z nej sa publikuje GitHub Pages) a stránka sa za 1–2 minúty prebuduje.
 
 Tím sa aktualizuje v súbore [`data/team.js`](data/team.js) – stačí poslať Claudovi screenshot alebo zoznam hráčov.
 
